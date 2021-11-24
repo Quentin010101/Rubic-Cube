@@ -14,10 +14,14 @@ body{
     top:20px;
     left: 20px;
 }
+
 .wrapper{
     perspective: 1000px;
-    height: 200px;
-    width: 200px;
+    transform-style: preserve-3d;
+
+    height: 300px;
+    width: 300px;
+    cursor: grab;
 }
 .container{
     position: relative;
@@ -30,71 +34,7 @@ body{
     position: absolute;
     transform-style: preserve-3d;
     height: 100px;
-    width: 100px;
-    
+    width: 100px;  
 }
 
-.face{
-    position: absolute;
-    transform-style: preserve-3d;
-    height: 99px;
-    width: 99px;
-    border: solid 2px black;
-}
-.cube .face:nth-child(1){
-    transform: rotateY(90deg) translateZ(50px);
-    background: rgb(108, 255, 9);
-}
-.cube .face:nth-child(2){
-    transform: rotateY(270deg) translateZ(50px);
-    background: rgb(255, 2, 2, 1);
 
-}
-.cube .face:nth-child(3){
-    transform: rotateY(0deg) translateZ(50px);
-    background: rgba(255, 251, 25, 1);
-
-}
-.cube .face:nth-child(4){
-    transform: rotateY(180deg) translateZ(50px);
-    background: rgb(12, 255, 255);
-
-}
-.cube .face:nth-child(5){
-    transform: rotateX(90deg) translateZ(50px);
-    background: rgb(255, 169, 9);
-
-}
-.cube .face:nth-child(6){
-    transform: rotateX(-90deg) translateZ(50px);
-    background: rgba(2, 27, 255, 1);
-}
-
-/* ////---------------New */
-
-/*
-.cube:nth-child(1) .face{
-    background: chartreuse;
-}
-.cube:nth-child(2) .face{
-    background: rgb(0, 238, 255);
-}
-.cube:nth-child(3) .face{
-    background: chartreuse;
-}
-.cube:nth-child(4) .face{
-    background: rgb(0, 225, 255);
-}
-.cube:nth-child(5) .face{
-    background: chartreuse;
-}
-.cube:nth-child(6) .face{
-    background: rgb(0, 238, 255);
-}
-.cube:nth-child(7) .face{
-    background: chartreuse;
-}
-.cube:nth-child(8) .face{
-    background: rgb(0, 225, 255);
-}
-*/
